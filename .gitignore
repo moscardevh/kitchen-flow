@@ -1,0 +1,22 @@
+# Java compiled output
+*.class
+
+# Common build output folders
+bin/
+out/
+
+# Maven / Gradle
+target/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
