@@ -15,4 +15,31 @@ public class MenuItem {
             this.ingredients.add(ing);
         }
     }
+public String getIngredientList() {
+    String ingredients = "";
+    for (int i = 0; i < this.ingredients.size(); i++) {
+        if (i > 0) ingredients += " , ";
+        ingredients += this.ingredients.get(i);
+    }
+    return ingredients;
+}
+    public int getIngredientCount() {
+        return ingredients.size();
+        
+    }
+    public String getName() {
+    return name;
+    }
+    public void setName(String name) {
+        if (name != null && !name.trim().isEmpty()) {
+        this.name = name;
+        }
+    }
+    public void displayMenuItemInfo() {
+    System.out.println(category + ": " + name);
+    System.out.println("Ingredientes: " + getIngredientList());
+    if (price > 0) {
+        System.out.println("Preço: R$ " + price);
+        }
+    }
 }
