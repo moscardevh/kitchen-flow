@@ -1,26 +1,101 @@
 # Kitchen Flow
 
+🍕 **Sistema completo para gestão de restaurantes** - Desenvolvido em Java com foco em aprendizado prático!
 
+## 🎯 Visão do Projeto
 
-Kitchen Flow is a restaurant operations app (starting in Java) focused on improving order flow from chat channels (e.g. WhatsApp) into kitchen production.
+Sistema profissional para gestão de restaurantes/negócios de comida com:
+- **CRM** para clientes
+- **Chatbot** para WhatsApp  
+- **Controle de pedidos** automatizado
+- **Gestão de estoque**
+- **Ponto eletrônico** (futuro)
 
+## 📋 Fluxo Principal
+1. Cliente faz pedido via WhatsApp
+2. Chatbot atende e processa pedido
+3. Sistema cria pedido automaticamente
+4. Pedido exportado para produção (impressão/display)
 
+---
 
-## Current status
+## 🚀 Status Atual (v0.3)
 
-- Basic `Pizza` model (constructors + methods)
+### ✅ **Funcionalidades Implementadas:**
+- **MenuItem genérico** com suporte a múltiplas categorias
+- **Sistema de preços** integrado
+- **Classe Menu** para gerenciamento profissional
+- **Classe Pedido** para controle de pedidos
+- **Cálculo automático de totais** 
+- **Saída formatada** com categoria, ingredientes e preços
+- **Arquitetura escalável** para diferentes tipos de estabelecimentos
 
-- Menu stored in an `ArrayList<Pizza>`
+### 🎓 **Conceitos Java Aprendidos:**
+- Herança e polimorfismo
+- Encapsulamento e construtores
+- Palavra-chave `this` e escopo de variáveis
+- Refatoração e boas práticas
+- Estrutura de projetos orientada a objetos
+- **Comunicação entre classes**
+- **ArrayList e coleções**
+- **Tipos primitivos vs objetos**
 
-- Console output for listing pizzas
+### 📊 **Evolução do Código:**
+```java
+// v0.1: Classe específica
+public class Pizza { ... }
 
+// v0.2: Sistema genérico e escalável
+public class MenuItem { ... }
+public class Menu { ... }
 
+// v0.3: Sistema de pedidos completo
+public class Pedido { ... }
+```
 
-## How to run (for now)
+---
 
-From `src/`:
+## 🛠️ Como Executar
 
-- Compile: `javac *.java`
+### Pré-requisitos:
+- JDK 17+ (testado com JDK 25)
 
-- Run: `java App`
+### Execução:
+```bash
+cd src/
+javac *.java
+java App
+```
+
+### Saída Esperada:
+```
+Pizza: Marguerita
+Ingredientes: mussarela, tomate, manjericão
+Preço: R$ 79.9
+```
+
+---
+
+## 🗺️ Roadmap
+
+### 🚧 **Próximos Passos:**
+- [ ] Testar integração Pedido + MenuItem
+- [ ] Sistema de status (PENDENTE → EM_PREPARO → PRONTO)
+- [ ] Gerenciador de pedidos
+- [ ] Tratamento de exceções
+- [ ] Chatbot básico
+- [ ] Integração WhatsApp API
+- [ ] Interface de produção
+
+### 🎯 **Objetivo de Aprendizado:**
+Cada conceito Java é aplicado em um contexto real de negócio, construindo um sistema profissional enquanto aprendemos!
+
+---
+
+## 📚 Metodologia
+
+**Aprendizado prático** - Cada conceito aplicado ao projeto real  
+**Problemas reais** - Desafios do dia a dia de restaurantes  
+**Progressão natural** - Do simples ao complexo  
+**Código funcional** - Sistema utilizável a cada fase
 
