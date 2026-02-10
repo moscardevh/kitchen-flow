@@ -5,11 +5,14 @@ public class MenuItem {
     protected double price;
     protected ArrayList<String> ingredients;
     protected String category;
+    protected String tipo; // "pizza", "drink", "sobremesa"
+    protected boolean disponivel = true;
 
-    public MenuItem(String name, double price, String category, String... ingredients) {
+    public MenuItem(String name, double price, String category, String tipo, String... ingredients) {
         this.name = name;
         this.price = price;
         this.category = category;
+        this.tipo = tipo;
         this.ingredients = new ArrayList<>();
         for (String ing : ingredients) {
             this.ingredients.add(ing);
@@ -44,5 +47,28 @@ public class MenuItem {
         if (price > 0) {
             System.out.println("Preço: R$ " + price);
         }
+        System.out.println("Disponível: " + (disponivel ? "SIM" : "NÃO"));
+    }
+    
+    // Métodos para controle de disponibilidade
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+    
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
+    
+    public void setIndisponivel() {
+        this.disponivel = false;
+    }
+    
+    // Getters/Setters para tipo
+    public String getTipo() {
+        return tipo;
+    }
+    
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

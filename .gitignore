@@ -1,22 +1,33 @@
-# Java compiled output
-*.class
-
-# Common build output folders
-bin/
-out/
-
-# Maven / Gradle
+HELP.md
 target/
-build/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# IDEs
-.vscode/
-.idea/
-*.iml
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
-.settings/
+.settings
+.springBeans
+.sts4-cache
 
-# OS
-.DS_Store
-Thumbs.db
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
