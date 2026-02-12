@@ -33,9 +33,20 @@ public class MenuItemService {
         return repository.findById(id);
     }
 
-    public List<MenuItem>getMenuItemsByTipo(String tipo){
+    public List<MenuItem> getMenuItemsByTipo(String tipo){
         return repository.findByTipo(tipo);
     }
-
     
+    // Retorna itens disponíveis
+    public List<MenuItem> getAvailableMenuItems() {
+        return repository.findByDisponivelTrue();
+    }
+    
+    // Deleta item por ID
+    public void deleteMenuItem(Long id) {
+        if (!repository.existsById(id)) {
+            throw new IllegalArgumentException("Item não encontrado com ID: " + id);
+        }
+        repository.deleteById(id);
+    }
 }

@@ -26,7 +26,7 @@ public class MenuController {
     
     @GetMapping("/menu/{id}")
     public MenuItem getMenuItemById(@PathVariable Long id) {
-        return menuItemService.getMenuItemById(id)
+        return menuItemService.findById(id)
                 .orElseThrow(() -> new RuntimeException("MenuItem not found with id: " + id));
     }
     
