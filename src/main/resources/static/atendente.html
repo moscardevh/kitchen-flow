@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Flow - Atendente</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍕 Kitchen Flow - Novo Pedido</h1>
+            <nav>
+                <a href="/menu.html">Menu Cliente</a>
+                <a href="/gestao.html">Gestão</a>
+            </nav>
+        </header>
+        <main>
+            <section class="pedido-form">
+                <h2>Criar Pedido Rápido</h2>
+                <form>
+                    <input type="text" placeholder="Nome do cliente" required>
+                    <input type="text" placeholder="Mesa (opcional)">
+                    <div class="itens-pedido">
+                        <h3>Itens Disponíveis:</h3>
+                        <div class="itens-grid">
+                            <!-- Itens virão do backend -->
+                        </div>
+                    </div>
+                    <button type="submit">Criar Pedido</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
